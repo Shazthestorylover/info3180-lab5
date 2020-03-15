@@ -33,11 +33,6 @@ def about():
 @app.route('/secure_page')
 @login_required
 def secure_page():
-    
-    
-    
-
-
     return render_template('secure_page.html')
 
 
@@ -76,10 +71,9 @@ def login():
                 # remember to flash a message to the user
                 
                 session['is_authenticated'] = True #current_user.is_authenticated
-                
                 flash('Logged in successfully.','success')
                 return redirect(url_for("secure_page"))
-                #return redirect(url_for("home"))  # they should be redirected to a secure-page route instead
+             
     return render_template("login.html", form=form)
 
 @app.route("/logout")
