@@ -7,9 +7,16 @@ Flask-SQLAlchemy
 Flask-Migrate
 Flask-Script
 Flask-Login
-psycopg2
+
 
 # ----------------------
 # Production Server
 # ----------------------
 gunicorn
+
+#------------------------------------------------------------------------------------#
+# Note: To successfully install pycopg2, please go to the following link and execute #
+#       the following commands before installing the requirements.txt file:          #
+#                                                                                    #
+#       link: https://www.psycopg.org/install/                                       #
+#------------------------------------------------------------------------------------#
